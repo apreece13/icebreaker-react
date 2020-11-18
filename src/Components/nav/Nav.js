@@ -7,6 +7,7 @@ class Nav extends Component {
     
     render (){
         return (
+            <>
                 <Navbar className="icebreaker-navbar" expand="lg" bg="light">
                     <Navbar.Brand href="#">Icebreaker</Navbar.Brand>
                     {/* Companies Dropdown */}
@@ -25,9 +26,11 @@ class Nav extends Component {
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
-                </Navbar>
-
-                
+                    {/* Nav.Link not working */}
+{/*                     <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#link">Link</Nav.Link>
+ */}                </Navbar>     
+            </>
             )
     }
 };
