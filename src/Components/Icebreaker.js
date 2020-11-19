@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "./nav/Nav";
+import IceNavbar from "./nav/IceNavbar";
 import ApplicationViews from "./ApplicationViews";
 
 
@@ -8,7 +8,7 @@ class Icebreaker extends Component {
       render() {
         return (
           <>
-            <Nav />
+            <IceNavbar />
               <ApplicationViews />
           </>
         );
