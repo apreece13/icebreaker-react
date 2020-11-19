@@ -8,22 +8,21 @@ class IceNavbar extends Component {
     render (){
         return (
             <>
-                <Navbar className="icebreaker-navbar" expand="lg" bg="light">
+                <Navbar collapseOnSelect className="icebreaker-navbar" expand="lg" bg="light">
+                    {/* Logo/Title */}
+                    <Navbar.Brand href="#">Icebreaker</Navbar.Brand>
+
+                    {/* Navbar responsive settings */}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        {/* Logo/Title */}
-                        <Navbar.Brand href="#">Icebreaker</Navbar.Brand>
 
                         {/* Left Section */}
                         <Nav className="mr-auto">
                             {/* Companies Dropdown */}
                             <NavDropdown title="Companies" id="collasible-nav-dropdown-company" active="false">
                                 <NavDropdown.Item href="#action/3.1">Find A Company</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Compare Companies</NavDropdown.Item>
                             </NavDropdown>
                             
                             {/* Job Seekers Dropdown */}
