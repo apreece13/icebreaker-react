@@ -26,16 +26,15 @@ class IceNavbar extends Component {
                             </NavDropdown>
                             
                             {/* Job Seekers Dropdown */}
-                            <NavDropdown title="Job Seekers" id="collasible-nav-dropdown-job-seeker">
-                                <NavDropdown.Item href="#action/3.1">Find A Company</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            <Nav.Link href="#JobSeekers">Job Seekers</Nav.Link>
+
+                            {/* Forums Dropdown */}                     
+                            <NavDropdown title="Forums" id="collasible-nav-dropdown-forums" active="false">
+                                <NavDropdown.Item href="#action/3.1">Company Forums</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Job Seeker Forums</NavDropdown.Item>
                             </NavDropdown>
 
                             {/* Nav.Links */}                     
-                            <Nav.Link href="#Forums">Forums</Nav.Link>
                             <Nav.Link href="#Testimonials">Testimonials</Nav.Link>
                             <Nav.Link href="#Bookmarks">Bookmarks</Nav.Link>
                         </Nav>
